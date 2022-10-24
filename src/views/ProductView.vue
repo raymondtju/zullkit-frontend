@@ -1,3 +1,7 @@
+<script setup>
+import Gallery from '../detail/Gallery.vue';
+</script>
+
 <template>
     <div class="container p-2 mx-auto my-10 max-w-7xl">
         <div class="flex flex-row flex-wrap py-4">
@@ -6,23 +10,7 @@
                     RoboCrypto UI Kit
                 </h1>
                 <p class="text-gray-500">Build your next coin startup</p>
-                <section id="gallery">
-                    <img src="img/gallery-1.png" alt="" class="w-full mt-6 rounded-2xl">
-                    <div class="grid grid-cols-4 gap-4 mt-4">
-                        <div class="overflow-hidden cursor-pointer rounded-2xl">
-                            <img src="img/gallery-2.png" class="w-full" alt="">
-                        </div>
-                        <div class="overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl">
-                            <img src="img/gallery-3.png" class="w-full" alt="">
-                        </div>
-                        <div class="overflow-hidden cursor-pointer rounded-2xl">
-                            <img src="img/gallery-4.png" class="w-full" alt="">
-                        </div>
-                        <div class="overflow-hidden cursor-pointer rounded-2xl">
-                            <img src="img/gallery-5.png" class="w-full" alt="">
-                        </div>
-                    </div>
-                </section>
+                <Gallery />
                 <section class="" id="orders">
                     <h1 class="mt-8 mb-3 text-lg font-semibold">About</h1>
                     <div class="text-gray-500">
@@ -49,7 +37,7 @@
                         <div class="mb-4">
                             <div class="flex mb-2">
                                 <div>
-                                    <img src="img/icon-figma.png" alt="" class="w-16" />
+                                    <img src="@/assets/img/icon-figma.png" alt="" class="w-16" />
                                 </div>
                                 <div class="block mt-1 ml-4">
                                     <h3 class="font-semibold text-md">Figma</h3>
@@ -60,7 +48,7 @@
                         <div class="mb-4">
                             <div class="flex mb-2">
                                 <div>
-                                    <img src="img/icon-sketch.png" alt="" class="w-16" />
+                                    <img src="@/assets/img/icon-sketch.png" alt="" class="w-16" />
                                 </div>
                                 <div class="block mt-1 ml-4">
                                     <h3 class="font-semibold text-md">Sketch</h3>
@@ -73,19 +61,19 @@
                             <ul class="mb-6 text-gray-500">
                                 <li class="mb-2">
                                     Customizable layers
-                                    <img src="img/icon-check.png" class="float-right w-5 mt-1" alt="">
+                                    <img src="@/assets/img/icon-check.png" class="float-right w-5 mt-1" alt="">
                                 </li>
                                 <li class="mb-2">
                                     Documentation
-                                    <img src="img/icon-check.png" class="float-right w-5 mt-1" alt="">
+                                    <img src="@/assets/img/icon-check.png" class="float-right w-5 mt-1" alt="">
                                 </li>
                                 <li class="mb-2">
                                     Icon set design
-                                    <img src="img/icon-check.png" class="float-right w-5 mt-1" alt="">
+                                    <img src="@/assets/img/icon-check.png" class="float-right w-5 mt-1" alt="">
                                 </li>
                                 <li class="mb-2">
                                     Pre-built UI screens
-                                    <img src="img/icon-check.png" class="float-right w-5 mt-1" alt="">
+                                    <img src="@/assets/img/icon-check.png" class="float-right w-5 mt-1" alt="">
                                 </li>
                             </ul>
                         </div>
