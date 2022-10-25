@@ -1,5 +1,10 @@
 <script setup>
 import Gallery from '../product/Gallery.vue';
+import { RouterLink } from 'vue-router';
+import {onMounted} from 'vue'
+onMounted(() => {
+    window.scrollTo(0,0);
+})
 </script>
 
 <template>
@@ -77,10 +82,10 @@ import Gallery from '../product/Gallery.vue';
                                 </li>
                             </ul>
                         </div>
-                        <a href="checkout.html"
+                        <RouterLink to="/pricing"
                             class="inline-flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-full hover:bg-indigo-700 md:py-2 md:text-md md:px-10 hover:shadow">
                             Download Now
-                        </a>
+                        </RouterLink>
                     </div>
                 </div>
             </aside>
